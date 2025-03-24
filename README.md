@@ -1,7 +1,7 @@
-# huaweicloud-terraform-basic-template
+# Terraform Template Platform Engineering Golden Path
 
 ## Overview
-This templates provision a managed container cluster CCE along with a load balancer ELB and it's necessary scaffolding.
+This templates provision a managed container cluster CCE along with a load balancer ELB and it's necessary scaffolding. 
 
 Components:
 1. VPC
