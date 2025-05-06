@@ -1,4 +1,4 @@
-# Terraform Template Platform Engineering Golden Path
+# Huawei Cloud Terraform Templates for Platform Engineering IaC
 
 ## Overview
 These templates allows you to provision Huawei Cloud PaaS services and it's necessary scaffolding. 
