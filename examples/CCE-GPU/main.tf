@@ -49,11 +49,12 @@ resource "huaweicloud_compute_keypair" "mykeypair" {
 }
 resource "huaweicloud_cce_cluster" "mycce" {
   name                   = var.cce_cluster_name
+#  cluster_version        = "v1.30" # Optional to specify cluster version
   flavor_id              = var.cce_cluster_flavor
   vpc_id                 = huaweicloud_vpc.myvpc.id
   subnet_id              = huaweicloud_vpc_subnet.mysubnet.id
   container_network_type = "overlay_l2"
-#  eip                    = huaweicloud_vpc_eip.myeip.address
+#  eip                    = huaweicloud_vpc_eip.myeip.address # Optional to enable EIP
 }
 
 resource "huaweicloud_cce_node" "mynode" {
