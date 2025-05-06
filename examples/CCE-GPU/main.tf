@@ -31,7 +31,7 @@ data "huaweicloud_availability_zones" "myaz" {}
 data "huaweicloud_cce_addon_template" "gpubeta" {
   cluster_id = huaweicloud_cce_cluster.mycce.id
   name       = "gpu-beta"
-  version    = "2.7.42" https://support.huaweicloud.com/intl/en-us/usermanual-cce/cce_10_0141.html
+  version    = "2.7.42" # Ref: https://support.huaweicloud.com/intl/en-us/usermanual-cce/cce_10_0141.html
 }
 
 resource "huaweicloud_cce_addon" "gpubeta" {
