@@ -55,7 +55,7 @@ variable "root_volume_size" {
 }
 
 variable "root_volume_type" {
-  default = "SAS"
+  default = "SSD"
 }
 
 variable "data_volume_size" {
@@ -63,7 +63,7 @@ variable "data_volume_size" {
 }
 
 variable "data_volume_type" {
-  default = "SAS"
+  default = "SSD"
 }
 
 variable "ecs_flavor" {
