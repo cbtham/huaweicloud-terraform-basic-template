@@ -36,8 +36,11 @@ data "huaweicloud_cce_addon_template" "gpubeta" {
 
 resource "huaweicloud_cce_addon" "gpubeta" {
   cluster_id    = huaweicloud_cce_cluster.mycce.id
-  version       = "2.7.42"
   template_name = "gpu-beta"
+  version       = "2.7.42"
+  values {
+    basic  = jsondecode(data.huaweicloud_cce_addon_template.gpubeta.spec).basic
+  }
 }
 
 resource "huaweicloud_compute_keypair" "mykeypair" {
